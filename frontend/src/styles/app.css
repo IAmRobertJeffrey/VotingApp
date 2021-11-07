@@ -4,14 +4,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #FBF2C0;
+  background-color: #28262C;
 }
 
 header
 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
   text-align: center;
   color: ivory;
-  background-color: #43281C;
+  background-color: #393645;
   width: 100%;
   height: 100px;
+  box-shadow:
+  1px 1px 3.2px rgba(0, 0, 0, 0.19),
+  2.3px 2.3px 7.3px rgba(0, 0, 0, 0.141),
+  4.2px 4.2px 13.2px rgba(0, 0, 0, 0.119),
+  6.9px 6.9px 21.8px rgba(0, 0, 0, 0.103),
+  11.4px 11.4px 36px rgba(0, 0, 0, 0.087),
+  19.9px 19.9px 62.9px rgba(0, 0, 0, 0.071),
+  43px 43px 136px rgba(0, 0, 0, 0.049)
+;
+
 }

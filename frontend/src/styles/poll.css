@@ -11,7 +11,7 @@
     border-bottom-right-radius: 1rem;
     margin: 5px;
     color: black;
-    background-color: #FEFBEC;
+    background-color: #F9F5FF;
     box-shadow:
   1px 1px 3.2px rgba(0, 0, 0, 0.19),
   2.3px 2.3px 7.3px rgba(0, 0, 0, 0.141),
@@ -23,17 +23,22 @@
 ;
 transition: background-color 0.25s ease;
 }
-.pollCard:hover
+.pollCard:hover > .title
 {
     transition: background-color 0.25s ease;
-    background-color: #FDF7D8;
+    background-color: #393645;
+    
+}
+.pollCard:hover
+{
+    background-color: #F3EBFF;
 }
 
 .title
 {
     text-align: center;
     width: 100%;
-    background-color: #48392A;
+    background-color: #454153;
     color: white;
 }
 
@@ -43,6 +48,13 @@ transition: background-color 0.25s ease;
     width: 100%;
     justify-content: space-evenly;
     text-align: center;
+    flex-direction: column;
+}
+.upvote
+{
+    top: 0.25rem;
+    right: 0.25rem;
+    position: absolute
 }
 .count
 {
@@ -51,4 +63,14 @@ transition: background-color 0.25s ease;
 .name
 {
     font-size: 1.25rem;
+    position: relative
+}
+
+b
+{
+    font-size: 1.5rem;
+}
+svg:hover
+{
+color: green;
 }

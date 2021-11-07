@@ -2,6 +2,7 @@
 {
     display: flex;
     width: 66.6%;
+    min-width: 600px;
     flex-wrap: wrap;
     height: fit-content;
 }
