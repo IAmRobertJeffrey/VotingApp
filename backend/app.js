@@ -13,7 +13,7 @@ app.use(function (req, res, next) {
   );
   next();
 });
-
+app.use(cors());
 app.use(bodyParser.json());
 
 const pollsRoute = require("./routes/polls");
