@@ -1,7 +1,7 @@
 .pollList
 {
     display: flex;
-    width: 66%;
+    width: 80%;
     flex-wrap: wrap;
     height: fit-content;
     align-items: baseline;
