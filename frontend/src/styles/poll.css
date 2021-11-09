@@ -7,6 +7,11 @@
     src: url(../fonts/Poppins-SemiBold.ttf);
   }
 
+  *
+{
+    text-decoration: none;
+}
+
 .pollCard
 {
     

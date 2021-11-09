@@ -5,5 +5,14 @@
     flex-wrap: wrap;
     height: fit-content;
     align-items: baseline;
+    justify-content:center;
+   
+    
+}
+.pollListContainer
+{
+    display: flex;
+    width: 100%;
     justify-content: center;
+    
 }

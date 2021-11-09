@@ -29,7 +29,7 @@ const Poll = ({pollData, fetchData, setVotingOn}) => {
     
     return (
         
-        <div onClick={() => {setVotingOn(pollData)}} className="pollCard">
+        <div key={pollData._id} onClick={() => {setVotingOn(pollData)}} className="pollCard">
             <div className="title"><h3>{pollData.title}</h3></div>
             <div className="votes">
             {pollData.votes.map((currentVote) => (<div key={currentVote._id} className="vote"><div className="name">{currentVote.name}: <b>{currentVote.count}</b>{hidden !== pollData.title ? <BiUpvote onClick={(() => {handleUpvote(pollData._id, currentVote.name); setHidden(pollData.title)})} className="upvote"/> : null}</div></div>
