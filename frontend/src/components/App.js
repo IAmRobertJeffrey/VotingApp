@@ -4,7 +4,7 @@ import PollList from "../components/PollList"
 import "../styles/app.css"
 import NameForm from "./NameForm"
 import AddPoll from "./AddPoll"
-import {IoAddCircle} from 'react-icons/io5'
+import {FiPlusSquare} from 'react-icons/fi'
 
 
 
@@ -82,7 +82,7 @@ const App = () => {
     <div className="app">
       
       
-        {nameActivated ?  <header><h1 onClick={(e) => setAddingPoll(false)} className="headerTitle">Public Polls</h1> <IoAddCircle  onClick={handleAddPoll} className="addPollButton" size="50px"/> </header> : null}
+        {nameActivated ?  <header><h1 onClick={(e) => setAddingPoll(false)} className="headerTitle">Public Polls</h1> <FiPlusSquare size="50px"  onClick={handleAddPoll} className="addPollButton pollButton"/> </header> : null}
        
        
         {!nameActivated && !addingPoll ? (<NameForm setNameActivated={setNameActivated} name={name} setName={setName}/>) : null}

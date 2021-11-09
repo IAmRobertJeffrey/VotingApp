@@ -13,17 +13,20 @@ const AddPoll = ({values, setValues, newPollTitle, setNewPollTitle, sendData, se
       );
     }
 
-  function handleChange(event) {
+  function handleChange(event) 
+  {
     let vals = [...values.val];
     vals[this] = event.target.value;
     setValues({ val: vals });
   }
 
-  const addClick = () => {
+  const addClick = () => 
+  {
     setValues({ val: [...values.val, '']})
   }
 
-  const removeClick = (i, value) => {
+  const removeClick = (i, value) => 
+  {
     let vals = [...values.val];
     
     vals.splice(vals.indexOf(i),1);
@@ -31,11 +34,18 @@ const AddPoll = ({values, setValues, newPollTitle, setNewPollTitle, sendData, se
     setValues({ val: vals });
   }
 
-  const handleSubmit = event => {
+  const handleSubmit = event => 
+  {
     event.preventDefault();
    
+    if(newPollTitle)
+    {
+    if(values.val.length >= 2)
+    {
 
-    const kek = values.val.map((current) => {
+    
+    const kek = values.val.map((current) => 
+    {
         return (Object.assign(
             {
             name: current,
@@ -56,6 +66,16 @@ const AddPoll = ({values, setValues, newPollTitle, setNewPollTitle, sendData, se
       setNewPollTitle("")
       setValues({ val: []})
       setAddingPoll(false)
+    }
+    else
+    {
+      window.alert("Please provide at least 2 choices for your poll.")
+    }
+  }
+  else
+  {
+    window.alert("Please provide a title for your poll.")
+  }
   }
 
   
