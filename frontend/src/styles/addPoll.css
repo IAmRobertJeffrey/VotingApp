@@ -1,97 +1,102 @@
-.addPollContainer
-{
-    width: 50%;
-    min-width: 350px;
-   
-    flex-direction: column;
-    padding: 25px;
-    background-color: #393645;
-    display: flex;
-   
-    justify-content: center;
-    box-shadow:
-  1px 1px 3.2px rgba(0, 0, 0, 0.19),
-  2.3px 2.3px 7.3px rgba(0, 0, 0, 0.141),
-  4.2px 4.2px 13.2px rgba(0, 0, 0, 0.119),
-  6.9px 6.9px 21.8px rgba(0, 0, 0, 0.103),
-  11.4px 11.4px 36px rgba(0, 0, 0, 0.087),
-  19.9px 19.9px 62.9px rgba(0, 0, 0, 0.071),
-  43px 43px 136px rgba(0, 0, 0, 0.049);
+.addPollContainer {
+  width: 50%;
+  flex-direction: column;
+  padding: 25px;
+  background-color: #393645;
+  display: flex;
+
+  justify-content: center;
+  box-shadow: 1px 1px 3.2px rgba(0, 0, 0, 0.19),
+    2.3px 2.3px 7.3px rgba(0, 0, 0, 0.141),
+    4.2px 4.2px 13.2px rgba(0, 0, 0, 0.119),
+    6.9px 6.9px 21.8px rgba(0, 0, 0, 0.103),
+    11.4px 11.4px 36px rgba(0, 0, 0, 0.087),
+    19.9px 19.9px 62.9px rgba(0, 0, 0, 0.071),
+    43px 43px 136px rgba(0, 0, 0, 0.049);
   margin-top: 25px;
 }
-.pollOption
-{
-    display: flex;
-    width: 65%;
-    align-items: center;
-    justify-content: center;
+.pollOption {
+  display: flex;
+  width: 65%;
+  align-items: center;
+  justify-content: center;
 }
 
-.pollOption input[type=button]
-{
-   width: 20%;
-   border-radius: 0;
-   border-top-right-radius: 2rem;
-   border-bottom-right-radius: 2rem;
+.pollOption input[type="button"] {
+  width: 20%;
+  border-radius: 0;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
-.addPollButton
-{
-    border-radius: 0;
-    margin: 10px;
+.addPollButton {
+  border-radius: 0;
+  margin: 10px;
 }
-.pollButton
-{
-    box-shadow:
-  0px 0px 0.4px rgba(0, 0, 0, 0.082),
-  0px 0px 1px rgba(0, 0, 0, 0.117),
-  0px 0px 1.9px rgba(0, 0, 0, 0.145),
-  0px 0px 3.4px rgba(0, 0, 0, 0.173),
-  0px 0px 6.3px rgba(0, 0, 0, 0.208),
-  0px 0px 15px rgba(0, 0, 0, 0.29)
-;
-border-radius: 0.5rem;
+.pollButton {
+  box-shadow: 0px 0px 0.4px rgba(0, 0, 0, 0.082),
+    0px 0px 1px rgba(0, 0, 0, 0.117), 0px 0px 1.9px rgba(0, 0, 0, 0.145),
+    0px 0px 3.4px rgba(0, 0, 0, 0.173), 0px 0px 6.3px rgba(0, 0, 0, 0.208),
+    0px 0px 15px rgba(0, 0, 0, 0.29);
+  border-radius: 0.5rem;
 }
 
-.pollForm
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.pollForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.pollForm input[type=text]
-{
-    width: 80%;
-    border-radius: 0;
-    margin-top: 25px;
-    margin-bottom: 25px;
+.pollForm input[type="text"] {
+  width: 80%;
+  border-radius: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-
-.pollForm button
-{
-    margin-top: 25px;
-    width: 80%;
-    border-radius: 0;
+.pollForm button {
+  margin-top: 25px;
+  width: 80%;
+  border-radius: 0;
 }
 
-.pollButtons
-{
-    display: flex;
-    width: 65%;
+.pollButtons {
+  display: flex;
+  width: 65%;
+  justify-content: center;
+
+  align-items: center;
+}
+@media only screen and (max-width: 750px) {
+  .addPollButton {
+    font-size: clamp(1pt, 2vw, 40pt);
+  }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 450px) {
   .pollOption {
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     border-radius: 0;
   }
-  .pollOption input[type=button]
-  {
+  .pollOption input[type="button"] {
     width: 50%;
     border-radius: 0;
+  }
+  input[type="text"],
+  input[type="button"] {
+    font-size: clamp(0.1rem, 5vw, 1rem);
+  }
+  .addPollButton {
+    font-size: clamp(0.1rem, 2vw, 1rem);
+  }
+  .pollButtons {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .addPollContainer {
+    width: 100%;
   }
 }

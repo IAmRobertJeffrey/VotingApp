@@ -1,97 +1,87 @@
 @font-face {
-    font-family: poppins;
-    src: url(../fonts/Poppins-Light.ttf);
-  }
-  @font-face {
-    font-family: poppinsHeader;
-    src: url(../fonts/Poppins-SemiBold.ttf);
-  }
-
-  *
-{
-    text-decoration: none;
+  font-family: poppins;
+  src: url(../fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: poppinsHeader;
+  src: url(../fonts/Poppins-SemiBold.ttf);
 }
 
-.pollCard
-{
-    
-    cursor: pointer;
-    width: 360px;
-    min-width: 360px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    margin: 20px;
-    color: black;
-    background-color: #F9F5FF;
-    box-shadow:
-  1px 1px 3.2px rgba(0, 0, 0, 0.19),
-  2.3px 2.3px 7.3px rgba(0, 0, 0, 0.141),
-  4.2px 4.2px 13.2px rgba(0, 0, 0, 0.119),
-  6.9px 6.9px 21.8px rgba(0, 0, 0, 0.103),
-  11.4px 11.4px 36px rgba(0, 0, 0, 0.087),
-  19.9px 19.9px 62.9px rgba(0, 0, 0, 0.071),
-  43px 43px 136px rgba(0, 0, 0, 0.049)
-;
-transition: background-color 0.25s ease;
-}
-.pollCard:hover > .title
-{
-    transition: background-color 0.25s ease;
-    background-color: #393645;
-    
-}
-.pollCard:hover
-{
-    background-color: #F3EBFF;
+* {
+  text-decoration: none;
 }
 
-.title
-{
-    font-family: poppinsHeader;
-    text-align: center;
+.pollCard {
+  cursor: pointer;
+  width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin: 20px;
+  color: black;
+  background-color: #f9f5ff;
+  box-shadow: 1px 1px 3.2px rgba(0, 0, 0, 0.19),
+    2.3px 2.3px 7.3px rgba(0, 0, 0, 0.141),
+    4.2px 4.2px 13.2px rgba(0, 0, 0, 0.119),
+    6.9px 6.9px 21.8px rgba(0, 0, 0, 0.103),
+    11.4px 11.4px 36px rgba(0, 0, 0, 0.087),
+    19.9px 19.9px 62.9px rgba(0, 0, 0, 0.071),
+    43px 43px 136px rgba(0, 0, 0, 0.049);
+  transition: background-color 0.25s ease;
+}
+
+@media only screen and (max-width: 450px) {
+  .pollCard {
     width: 100%;
-    background-color: #454153;
-    color: white;
+  }
 }
 
-.votes
-{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    text-align: center;
-    flex-direction: column;
-    font-family: poppins;
+.pollCard:hover > .title {
+  transition: background-color 0.25s ease;
+  background-color: #393645;
 }
-.vote
-{
-    border-top: 1px solid black;
-}
-.upvote
-{
-    top: 0.25rem;
-    right: 0.25rem;
-    position: absolute
-}
-.count
-{
-    font-size: 2rem;
-}
-.name
-{
-    font-size: 1.25rem;
-    position: relative
+.pollCard:hover {
+  background-color: #f3ebff;
 }
 
-b
-{
-    font-size: 1.5rem;
+.title {
+  font-family: poppinsHeader;
+  text-align: center;
+  width: 100%;
+  background-color: #454153;
+  color: white;
 }
-svg:hover
-{
-color: green;
+
+.votes {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-direction: column;
+  font-family: poppins;
+}
+.vote {
+  border-top: 1px solid black;
+}
+.upvote {
+  top: 0.25rem;
+  right: 0.25rem;
+  position: absolute;
+}
+.count {
+  font-size: 2rem;
+}
+.name {
+  font-size: 1.25rem;
+  position: relative;
+}
+
+b {
+  font-size: 1.5rem;
+}
+svg:hover {
+  color: green;
 }
