@@ -77,6 +77,8 @@
 .name {
   font-size: 1.25rem;
   position: relative;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 b {
