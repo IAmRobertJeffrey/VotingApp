@@ -68,35 +68,51 @@
 
   align-items: center;
 }
-@media only screen and (max-width: 750px) {
-  .addPollButton {
-    font-size: clamp(1pt, 2vw, 40pt);
+
+@media only screen and (max-width: 1500px) {
+  .pollOption input[type="button"] {
+    font-size: 0.6rem;
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 800px) {
+  .pollForm {
+    width: 100%;
+  }
   .pollOption {
     flex-direction: column;
     width: 100%;
     border-radius: 0;
   }
-  .pollOption input[type="button"] {
-    width: 50%;
-    border-radius: 0;
+  .pollForm input[type="text"] {
+    font-size: clamp(0rem, 5vw, 1rem);
+    width: 100%;
+    margin-bottom: 5px;
   }
-  input[type="text"],
+  .pollOption input[type="text"] {
+    width: 100%;
+    font-size: clamp(0rem, 5vw, 1rem);
+  }
+  input[type="submit"] {
+    font-size: clamp(0rem, 5vw, 1rem);
+  }
   input[type="button"] {
-    font-size: clamp(0.1rem, 5vw, 1rem);
+    font-size: clamp(0rem, 5vw, 1rem);
   }
-  .addPollButton {
-    font-size: clamp(0.1rem, 2vw, 1rem);
+  .pollOption input[type="button"] {
+    border-radius: 0;
+    margin-bottom: 25px;
+    width: 100%;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
   }
   .pollButtons {
-    flex-direction: column;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
   .addPollContainer {
-    width: 100%;
+    width: 90%;
   }
 }
