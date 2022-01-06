@@ -2,15 +2,15 @@ import { useEffect } from "react";
 import { useState } from "react";
 import PollList from "../components/PollList";
 import "../styles/app.css";
-import NameForm from "./NameForm";
+// import NameForm from "./NameForm";
 import AddPoll from "./AddPoll";
 import { FiPlusSquare } from "react-icons/fi";
 
 const App = () =>
 {
 	const [data, setData] = useState();
-	const [name, setName] = useState();
-	const [nameActivated, setNameActivated] = useState();
+	// const [name, setName] = useState();
+	// const [nameActivated, setNameActivated] = useState();
 	const [votingOn, setVotingOn] = useState("");
 	const [addingPoll, setAddingPoll] = useState(false);
 	const [values, setValues] = useState({ val: [] });
